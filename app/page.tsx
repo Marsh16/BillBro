@@ -312,7 +312,7 @@ export default function Home() {
                   </div>
                   <CardTitle>Premium</CardTitle>
                   <CardDescription>Unlock all features forever</CardDescription>
-                  <div className="mt-4 text-4xl font-bold">$4.99</div>
+                  <div className="mt-4 text-4xl font-bold">$49.99</div>
                   <p className="text-sm text-muted-foreground">
                     One-time payment
                   </p>
@@ -449,7 +449,7 @@ export default function Home() {
                     <p className="text-sm text-muted-foreground mt-1">
                       Yes, BillBro offers a free version with basic features.
                       For unlimited access to all features, there's a one-time
-                      premium purchase of $4.99.
+                      premium purchase of $49.99.
                     </p>
                   </div>
                   <div className="rounded-lg border p-4">
@@ -457,20 +457,8 @@ export default function Home() {
                       What's included in the Premium version?
                     </h3>
                     <p className="text-sm text-muted-foreground mt-1">
-                      Premium includes unlimited OCR scans, unlimited
-                      speech-to-text, unlimited trips, unlimited members per
+                      Premium includes unlimited OCR scans, unlimited trips, unlimited members per
                       trip, advanced splitting options, and priority support.
-                    </p>
-                  </div>
-                  <div className="rounded-lg border p-4">
-                    <h3 className="font-semibold">
-                      Is the Premium purchase really a one-time fee?
-                    </h3>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      Yes! Unlike many apps that charge monthly or yearly
-                      subscriptions, BillBro Premium is a one-time purchase of
-                      $4.99 that gives you lifetime access to all premium
-                      features.
                     </p>
                   </div>
                 </TabsContent>
@@ -596,13 +584,13 @@ export default function Home() {
           </div>
           <div className="flex gap-4">
             <Link
-              href="#"
+              href="/terms-and-condition"
               className="text-sm text-muted-foreground underline-offset-4 hover:underline"
             >
               Terms
             </Link>
             <Link
-              href="#"
+              href="/privacy-policy"
               className="text-sm text-muted-foreground underline-offset-4 hover:underline"
             >
               Privacy
