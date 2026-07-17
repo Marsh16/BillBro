@@ -498,7 +498,7 @@ export default function Home() {
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-green-500" />
-                      <span>Limited OCR scans (5/day)</span>
+                      <span>Limited OCR scans (3/day)</span>
                     </li>
                   </ul>
                 </CardContent>
