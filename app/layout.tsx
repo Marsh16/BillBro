@@ -1,6 +1,21 @@
 import type React from "react"
+import { Fraunces, Plus_Jakarta_Sans } from "next/font/google"
 import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { CursorGlow } from "@/components/cursor-glow"
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-jakarta",
+})
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-fraunces",
+})
 
 export const metadata = {
   title: "BillBro - Split Bills for Trips",
@@ -15,10 +30,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${jakarta.variable} ${fraunces.variable}`}
+    >
       <head />
       <body>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+          <CursorGlow />
           {children}
         </ThemeProvider>
       </body>

@@ -3,7 +3,25 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jakarta), Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-padding-top: 8rem;
+}
+
+@keyframes surf {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(6deg);
+  }
+}
+.animate-surf {
+  display: inline-block;
+  animation: surf 2.2s ease-in-out infinite;
 }
 
 @layer utilities {
